@@ -1,0 +1,68 @@
+/* Slider 1 */
+
+/* Carusel */
+/* .slide{
+    position: relative;
+    transition: 10s ease;
+}
+.slide {
+    display: block;
+    transition-duration: 5s;
+    transition:  5s ease;
+} */
+
+.slide-hidden {
+    display: none;
+}
+
+/* ----/ */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+.carousel .slide{
+    transition: all 3s;
+}
+  .carousel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s;
+  }
+  .carousel__btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .carousel__btn--prev {
+    left: 0;
+  }
+  .carousel__btn--next {
+    right: 0;
+  }
+  .carousel__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 3s;
+    transition: transform 0.3s ease-in-out;
+  }
+  .slide {
+    opacity: 0; /* Початково зробити зображення прозорим */
+    transition: opacity 0.5s ease; /* Плавне з'явлення зображення */
+}
+
+.active {
+    opacity: 1; /* Зробити активне зображення повністю видимим */
+}
+
+.slide-hidden {
+    display: none;
+}
+
